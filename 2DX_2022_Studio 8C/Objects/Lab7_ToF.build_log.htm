@@ -1,0 +1,91 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: µVision V5.36.0.0
+Copyright (C) 2021 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: Kumod Pinnaduwage, McMaster Computer Engineering 2DX4, LIC=----
+ 
+Tool Versions:
+Toolchain:       MDK-Lite  Version: 5.36.0.0
+Toolchain Path:  E:\Year2\Keil\ARM\ARMCC\Bin
+C Compiler:      Armcc.exe V5.06 update 7 (build 960)
+Assembler:       Armasm.exe V5.06 update 7 (build 960)
+Linker/Locator:  ArmLink.exe V5.06 update 7 (build 960)
+Library Manager: ArmAr.exe V5.06 update 7 (build 960)
+Hex Converter:   FromElf.exe V5.06 update 7 (build 960)
+CPU DLL:         SARMCM3.DLL V5.36.0.0
+Dialog DLL:      DCM.DLL V1.17.3.0
+Target DLL:      CMSIS_AGDI.dll V1.33.0.0
+Dialog DLL:      TCM.DLL V1.53.0.0
+ 
+<h2>Project:</h2>
+E:\Year2\Keil\Project\Deliverable 2\2DX_2022_Studio 8C\2dx_studio_8c.uvprojx
+Project File Date:  04/01/2022
+
+<h2>Output:</h2>
+*** Using Compiler 'V5.06 update 7 (build 960)', folder: 'E:\Year2\Keil\ARM\ARMCC\Bin'
+Build target 'Target 1'
+compiling SysTick.c...
+compiling PLL.c...
+compiling VL53L1X_api.c...
+VL53L1X_api.c(271): warning:  #177-D: variable "tmp"  was declared but never referenced
+  	uint8_t tmp;
+VL53L1X_api.c: 1 warning, 0 errors
+assembling startup_msp432e401y_uvision.s...
+compiling onboardLEDs.c...
+compiling 2dx_studio_8c.c...
+2dx_studio_8c.c(99): warning:  #177-D: variable "byteData"  was declared but never referenced
+    uint8_t byteData, sensorState=0, myByteArray[10] = {0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF} , i=0;
+2dx_studio_8c.c(99): warning:  #177-D: variable "myByteArray"  was declared but never referenced
+    uint8_t byteData, sensorState=0, myByteArray[10] = {0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF} , i=0;
+2dx_studio_8c.c(99): warning:  #177-D: variable "i"  was declared but never referenced
+    uint8_t byteData, sensorState=0, myByteArray[10] = {0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF} , i=0;
+compiling uart.c...
+uart.c(66): warning:  #1-D: last line of file ends without a newline
+  	
+uart.c: 1 warning, 0 errors
+compiling vl53l1_platform_2dx4.c...
+vl53l1_platform_2dx4.c(328): warning:  #167-D: argument of type "uint32_t *" is incompatible with parameter of type "uint8_t *"
+  	writeI2C(&data, 4);	
+vl53l1_platform_2dx4.c(406): warning:  #223-D: function "SysTick_Wait" declared implicitly
+      SysTick_Wait(120000);  // wait 10ms (assumes 120 MHz clock)
+vl53l1_platform_2dx4.c: 2 warnings, 0 errors
+compiling system_msp432e401y.c...
+linking...
+Program Size: Code=4414 RO-data=698 RW-data=12 ZI-data=2660  
+".\Objects\Lab7_ToF.axf" - 0 Error(s), 7 Warning(s).
+
+<h2>Software Packages used:</h2>
+
+Package Vendor: ARM
+                http://www.keil.com/pack/ARM.CMSIS.5.8.0.pack
+                ARM.CMSIS.5.8.0
+                CMSIS (Common Microcontroller Software Interface Standard)
+   * Component: CORE Version: 5.5.0
+
+Package Vendor: TexasInstruments
+                http://software-dl.ti.com/msp430/msp430_public_sw/mcu/msp430/msp432cmsis/latest/exports/TexasInstruments.MSP432E4_DFP.3.2.6.pack
+                TexasInstruments.MSP432E4_DFP.3.2.6
+                Device Family Pack for Texas Instruments SimpleLink(TM) MSP432E4 Series
+   * Component: Startup Version: 3.2.3
+
+<h2>Collection of Component include folders:</h2>
+  .\RTE\_Target_1
+  C:\Users\Lahiru\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include
+  C:\Users\Lahiru\AppData\Local\Arm\Packs\TexasInstruments\MSP432E4_DFP\3.2.6\Device\Include
+
+<h2>Collection of Component Files used:</h2>
+
+   * Component: ARM::CMSIS:CORE:5.5.0
+
+   * Component: TexasInstruments::Device:Startup:3.2.3
+      Source file:   Device\Source\startup_msp432e401y_uvision.s
+      Source file:   Examples\BlinkLED\blinkLED.c
+      Source file:   Examples\EmptyMain\main.c
+      Source file:   Device\Source\system_msp432e401y.c
+Build Time Elapsed:  00:00:02
+</pre>
+</body>
+</html>
